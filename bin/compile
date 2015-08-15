@@ -58,7 +58,7 @@ fi
 BIN="postgrest-${POSTGREST_VER}"
 
 if [ ! -e $CACHE_DIR/$BIN ]; then
-  BIN_URL="http://bin.begriffs.com/dbapi/heroku/${BIN}.tar.xz"
+  BIN_URL="https://github.com/CityOfPhiladelphia/postgrest/releases/download/v0.2.10.1-rpc/postgrest-0.2.10.1-rpc.tar.xz"
   if curl --output /dev/null --silent --head --fail $BIN_URL; then
     echo "-----> Downloading and caching POSTGREST $POSTGREST_VER binary"
     mkdir -p $CACHE_DIR
